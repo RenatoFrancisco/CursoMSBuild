@@ -8,6 +8,9 @@
         <Arquivos Include="Categoria.cs"/>
     </ItemGroup>
     <Target Name="Compile">
+        <Message Text="Executando o script de compilação"/>
+        <Delete Files="$(ArquivoSaida)" />
+        <RemoveDir Directories="bin" />
         <MakeDir Directories="bin" />
         <Csc Sources="@(arquivos)"  OutputAssembly="$(ArquivoSaida)" />
     </Target>
