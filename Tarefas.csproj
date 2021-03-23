@@ -1,6 +1,14 @@
 <Project>
+    <PropertyGroup>
+        <ArquivoSaida>bin\Tarefas.exe</ArquivoSaida>
+    </PropertyGroup>
+    <ItemGroup>
+        <Arquivos Include="ListaTarefas.cs"/>
+        <Arquivos Include="Tarefa.cs"/>
+        <Arquivos Include="Categoria.cs"/>
+    </ItemGroup>
     <Target Name="Compile">
         <MakeDir Directories="bin" />
-        <Csc Sources="ListaTarefas.cs;Tarefa.cs;Categoria.cs"  OutputAssembly="bin\Tarefas.exe"/>
+        <Csc Sources="@(arquivos)"  OutputAssembly="$(ArquivoSaida)" />
     </Target>
 </Project>
