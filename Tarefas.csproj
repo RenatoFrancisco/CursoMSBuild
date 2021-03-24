@@ -3,11 +3,16 @@
         <ArquivoSaida>bin\Tarefas.exe</ArquivoSaida>
     </PropertyGroup>
     <ItemGroup>
-        <Arquivos Include="ListaTarefas.cs"/>
+        <!-- <Arquivos Include="ListaTarefas.cs"/>
         <Arquivos Include="Tarefa.cs"/>
         <Arquivos Include="Categoria.cs"/>
+        <Arquivos Include="RelatorioDePendencias.cs" /> -->
+        <Arquivos Include="**\*.cs" Exclude="**\Program.cs" />
     </ItemGroup>
 
+    <Target Name="ArquivosParaCompilar">
+        <Message Text="@(Arquivos)" />
+    </Target>
     <Target Name="Inicio" BeforeTargets="Compile">
         <Message Text="Início da execução do script de compilação..." />
     </Target>
