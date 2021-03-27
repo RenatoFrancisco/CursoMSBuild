@@ -2,6 +2,11 @@
     <PropertyGroup>
         <ArquivoSaida>bin\Tarefas.exe</ArquivoSaida>
     </PropertyGroup>
+
+    <PropertyGroup>
+        <ArquivoSaida>bin\Program.exe</ArquivoSaida>
+    </PropertyGroup>
+
     <ItemGroup>
         <!-- <Arquivos Include="ListaTarefas.cs"/>
         <Arquivos Include="Tarefa.cs"/>
@@ -9,6 +14,10 @@
         <Arquivos Include="RelatorioDePendencias.cs" /> -->
         <Arquivos Include="**\*.cs" Exclude="**\Program.cs" />
     </ItemGroup>
+
+    <Target Name="PropriedadesReservadas">
+        <Message Text="$(MsBuildProjectFile)" />
+    </Target>
 
     <Target Name="ArquivosParaCompilar">
         <Message Text="@(Arquivos)" />
