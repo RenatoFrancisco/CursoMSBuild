@@ -1,9 +1,7 @@
 
 <Project DefaultTargets="Compile">
-    <PropertyGroup>
-        <ArquivoSaida>bin\Financas.exe</ArquivoSaida>
-    </PropertyGroup>
 
+    <Import Project="Comum.props" />
     <ItemGroup>
         <Arquivos Include="**\*.cs" />
     </ItemGroup>
@@ -23,7 +21,7 @@
 
     <Target Name="Compile">
         <MakeDir Directories="bin" />
-        <Csc Sources="@(arquivos)"  OutputAssembly="$(ArquivoSaida)" />
+        <Csc Sources="@(arquivos)"  OutputAssembly="$(DiretorioSaida)$(ArquivoSaida)" />
     </Target>
 
     <Target Name="Recompile" DependsOnTargets="Clean;Compile">
