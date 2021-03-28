@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Alura.Financas.Modelos;
 
 namespace Alura.FinancasWeb.Controllers
 {
@@ -6,7 +7,12 @@ namespace Alura.FinancasWeb.Controllers
 	{
 		public IActionResult Index()
 		{
-			return Ok("Alô, mundo!");
+			var cliente = new Cliente("Fulano de Tal");
+			var conta = new Conta("12387-12", cliente);
+			conta.Deposita(500);
+			conta.Saca(200);
+
+			return Ok($"O saldo da conta é {conta.Saldo}");
 		}
 	}
 }
