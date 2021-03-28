@@ -23,4 +23,4 @@ Curso sobre MS Build da plataforma Alura
 6. Empacotando a aplicação com Docker :heavy_check_mark:
 
 ## Certificado de Participação
-*Cursando*
+https://cursos.alura.com.br/certificate/3b1f5901-8a53-4257-b305-22ec7f27cce9
