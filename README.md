@@ -19,7 +19,7 @@ Curso sobre MS Build da plataforma Alura
 2. Os 4 blocos fundamentais do MSBuid :heavy_check_mark:
 3. Reaproveitando projetos de build :heavy_check_mark:
 4. Compilando com diferentes objetivos :heavy_check_mark:
-5. .NET Command Line Interface
+5. .NET Command Line Interface :heavy_check_mark:
 6. Empacotando a aplicação com Docker
 
 ## Certificado de Participação
