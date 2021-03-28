@@ -20,7 +20,7 @@ Curso sobre MS Build da plataforma Alura
 3. Reaproveitando projetos de build :heavy_check_mark:
 4. Compilando com diferentes objetivos :heavy_check_mark:
 5. .NET Command Line Interface :heavy_check_mark:
-6. Empacotando a aplicação com Docker
+6. Empacotando a aplicação com Docker :heavy_check_mark:
 
 ## Certificado de Participação
 *Cursando*
