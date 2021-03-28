@@ -18,7 +18,7 @@ Curso sobre MS Build da plataforma Alura
 1. O arquivo CSPROJ :heavy_check_mark:
 2. Os 4 blocos fundamentais do MSBuid :heavy_check_mark:
 3. Reaproveitando projetos de build :heavy_check_mark:
-4. Compilando com diferentes objetivos
+4. Compilando com diferentes objetivos :heavy_check_mark:
 5. .NET Command Line Interface
 6. Empacotando a aplicação com Docker
 
